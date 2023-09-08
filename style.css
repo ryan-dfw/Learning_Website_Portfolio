@@ -1,63 +1,67 @@
 :root {
-    --HoverBlue: #B3B3E5;
-    --NeatRed: #eb3a3a;
+  --BkgBlue: #040406;
+  --TextBlue: #ececf7;
+  --HoverBlue: #b3b3e5;
+  --NeatRed: #eb3a3a;
 }
 
 body {
-    font-family: 'Frank Ruhl Libre', sans-serif;
+  font-family: "Frank Ruhl Libre", sans-serif;
+  background-color: var(--BkgBlue);
 }
 
 .navbar {
-    border-radius: 0 0 3.5% 3.5%;
+  border-radius: 0 0 3.5% 3.5%;
 }
 
 .navbar h3 {
-    color: white;
-    font-weight: 100;
-    font-size: 2em;
+  color: var(--TextBlue);
+  font-weight: 100;
+  font-size: 2em;
 }
 
 .navbar .navbar-brand {
-    font-weight: 500;
-    font-size: 2em;
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .navbar .navbar-brand:hover {
-    color: var(--HoverBlue) !important;
+  color: var(--HoverBlue) !important;
 }
 
 .navbar ul {
-    align-items: center;
+  align-items: center;
 }
 
 .navbar li {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .navbar .spacer {
-    width: 3vw;
+  width: 3vw;
 }
 
 .navbar .spacer-mini {
-    width: 1vw;
+  width: 1vw;
 }
 
 .navbar .currently-here {
-    color: grey !important;
-    pointer-events: none;
+  color: grey !important;
+  pointer-events: none;
 }
 
-.navbar .nav-link, .navbar-brand {
-    transition: color 0.3s, font-size 0.3s;
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  transition: color 0.3s, font-size 0.3s;
 }
 
 .navbar .nav-link:not(.currently-here):hover {
-    color: var(--HoverBlue) !important;
-    font-size: 1.3em;
+  color: var(--HoverBlue) !important;
+  font-size: 1.3em;
 }
 
 @media (max-width: 999px) {
-    .kill-on-small {
-        display: none;
-    }
+  .kill-on-small {
+    display: none;
+  }
 }

@@ -1,3 +1,8 @@
+:root {
+    --HoverBlue: #B3B3E5;
+    --NeatRed: #eb3a3a;
+}
+
 body {
     font-family: 'Frank Ruhl Libre', sans-serif;
 }
@@ -17,12 +22,16 @@ body {
     font-size: 2em;
 }
 
+.navbar .navbar-brand:hover {
+    color: var(--HoverBlue) !important;
+}
+
 .navbar ul {
     align-items: center;
 }
 
 .navbar li {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .navbar .spacer {
@@ -31,6 +40,20 @@ body {
 
 .navbar .spacer-mini {
     width: 1vw;
+}
+
+.navbar .currently-here {
+    color: grey !important;
+    pointer-events: none;
+}
+
+.navbar .nav-link, .navbar-brand {
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.navbar .nav-link:not(.currently-here):hover {
+    color: var(--HoverBlue) !important;
+    font-size: 1.3em;
 }
 
 @media (max-width: 999px) {

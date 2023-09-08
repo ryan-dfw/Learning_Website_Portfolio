@@ -9,11 +9,20 @@ body {
 .navbar h3 {
     color: white;
     font-weight: 100;
+    font-size: 2em;
 }
 
 .navbar .navbar-brand {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2em;
+}
+
+.navbar ul {
+    align-items: center;
+}
+
+.navbar li {
+    font-size: 1em;
 }
 
 .navbar .spacer {

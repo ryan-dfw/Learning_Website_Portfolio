@@ -15,3 +15,17 @@ body {
     font-weight: 500;
     font-size: 30px;
 }
+
+.navbar .spacer {
+    width: 3vw;
+}
+
+.navbar .spacer-mini {
+    width: 1vw;
+}
+
+@media (max-width: 999px) {
+    .kill-on-small {
+        display: none;
+    }
+}

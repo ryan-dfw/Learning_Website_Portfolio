@@ -90,4 +90,7 @@ body {
   .kill-on-small {
     display: none;
   }
+  .sixty {
+    width: 90vw;
+  }
 }

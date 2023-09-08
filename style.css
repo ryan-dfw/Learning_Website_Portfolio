@@ -72,6 +72,10 @@ body {
   font-size: 1.3em;
 }
 
+#headshot {
+  max-width: 30vw;
+}
+
 @media (max-width: 999px) {
   .kill-on-small {
     display: none;

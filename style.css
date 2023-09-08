@@ -10,6 +10,18 @@ body {
   background-color: var(--BkgBlue);
 }
 
+.ninety,
+.ninetier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ninety {
+  width: 90vw;
+}
+
 .navbar {
   border-radius: 0 0 3.5% 3.5%;
 }
